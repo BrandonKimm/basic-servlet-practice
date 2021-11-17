@@ -21,12 +21,13 @@ public class RequestParamServlet extends HttpServlet {
         System.out.println("[전체파라미터 조회 end]");
         System.out.println();
 
-        System.out.println("[단일파라미터 조회 start");
+        System.out.println("[단일파라미터 조회 start]");
         String username = request.getParameter("username");
         String age = request.getParameter("age");
         System.out.println("age = " + age);
         System.out.println("username = " + username);
         System.out.println("[단일파라미터 조회 end]");
+        System.out.println();
 
         System.out.println("[중복파라미터 조회 start]");
         String[] usernames = request.getParameterValues("username");
